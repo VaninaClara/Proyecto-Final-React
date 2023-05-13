@@ -1,0 +1,15 @@
+Se utilizaron cuatro componentes:
+1.	App: Componente principal. Renderiza PostForm y ListForm.
+2.	ListPost: Muestra una lista de todas las publicaciones existentes.
+3.	CardPost: Muestra una única publicación. Se utiliza en ListPost.
+4.	PostForm: Formulario para crear nuevos posts.
+
+Cuando se inicia, se hace una solicitud a la API 'https://jsonplaceholder.typicode.com/posts' para obtener una lista de posts que se guardan en estado local haciendo uso del hook useState.
+
+Se usa el hook useEffect para realizar esta solicitud.
+
+En PostForm, la función addPost se activa, actualizando el estado de los posts para agregar un nuevo post, como props.
+
+En ListPost aparecen todos los posts y se pueden eliminar posts, con la función deletePost. Se utilizan props. 
+
+CardPost también utiliza la función de eliminar como props. Muestra el botón.
